@@ -1,0 +1,181 @@
+.behance-logoABK img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.footer-sectionABK h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.social-iconsABK ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  background-color: #17181f;
+  padding: 40px 0;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-contentABK {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+.logo-and-linksABK {
+  display: flex;
+  align-items: flex-start;
+}
+
+.behance-logoABK {
+  margin-top: 2rem;
+  margin-right: 20%;
+}
+
+.links-containerABK {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+  width: 100%;
+}
+
+.footer-sectionABK {
+  display: inline-block;
+  margin-right: 20px;
+  width: 100%;
+}
+
+.footer-sections-wrapperABK {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: white;
+}
+
+.footer-sectionABK ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-sectionABK li {
+  margin-bottom: 10px;
+}
+
+.footer-sectionABK a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.footer-sectionABK a:hover {
+  color: #ccc;
+}
+
+.footer-sectionABK:last-child {
+  margin-right: 0;
+}
+
+.social-iconsABK {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-iconsABK li {
+  margin-bottom: 10px;
+}
+
+.social-iconsABK a {
+  color: white;
+  font-size: 18px;
+}
+
+.social-iconsABK a:hover {
+  color: #ccc;
+}
+
+.social-iconsABK i {
+  margin-right: 10px;
+}
+
+.copyright-legalABK {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.copyrightABK {
+  font-size: 14px;
+  color: #888;
+}
+
+.legal-linksABK {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-left: auto;
+}
+
+.legal-linksABK li {
+  margin-left: 20px;
+}
+
+.legal-linksABK a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-contentABK {
+      flex-direction: column;
+  }
+
+  .footer-sectionABK {
+      margin-bottom: 20px;
+      display: block;
+      width: 100%;
+  }
+
+  .footer-sections-wrapperABK {
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .copyright-legalABK {
+      display: none;
+  }
+
+  .social-iconsABK {
+      justify-content: center;
+      padding: 0;
+  }
+
+  .behance-logoABK {
+      display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+}
+
+@media only screen and (max-width: 320px) {
+}

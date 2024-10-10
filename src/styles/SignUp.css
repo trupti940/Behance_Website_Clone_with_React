@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .sign-up-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../assets/mountain.jpg);
+  background-size: cover;
+
+  }
+  .signin-left {
+    height: 200px;
+    width: 200px;
+    margin-top: 60px;
+    
+  }
+
+  .left-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+    
+  }
+  .left-content>p{
+    font-size: 24px;
+    color: white;
+    font-weight: 500;
+  }
+  
+  .sign-up-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    width: 450px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sign-up-box h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  
+  .social-login {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .mv-social-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .mv-social-btn.google {
+    color: #4285f4;
+  }
+  
+  .mv-social-btn.facebook {
+    color: #4267b2;
+  }
+  
+  .mv-social-btn.apple {
+    color: black;
+  }
+  
+  .mv-social-btn.microsoft {
+    color: #00a1f1;
+  }
+  
+  .mv-social-btn.line {
+    color: #00b900;
+  }
+  
+  .separator {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    align-items: center;
+  }
+  
+  .separator::before, .separator::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .separator::before {
+    margin-right: 10px;
+  }
+  
+  .separator::after {
+    margin-left: 10px;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  p a {
+    color: #007bff;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .continue-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .continue-btn:disabled {
+    background-color: #ccc;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .sign-up-box {
+      width: 90%;
+    }
+  }
+  

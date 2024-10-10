@@ -1,0 +1,72 @@
+.footer {
+  background-color: #f9f9f9;
+  padding: 10px 20px;
+  border-top: 1px solid #ddd;
+  position: sticky;
+  bottom: 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.left-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.left-links a {
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+}
+
+.left-links a:hover {
+  text-decoration: underline;
+}
+
+.right-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.adobe-icon {
+  margin-left: 15px;
+  font-size: 16px;
+  color: #666;
+}
+
+/* Media Queries for Small Screens (phones, 480px and down) */
+@media (max-width: 480px) {
+  .footer-content {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    position:absolute;
+    margin-left:50px ; /* Align items to the start */
+  }
+
+  .left-links {
+    flex-direction: column;
+     /* Stack links vertically */
+    gap: 5px; /* Adjust gap for spacing */
+  }
+
+  .right-logo {
+    margin-top: 10px;
+    /* Add spacing above the logo */
+  }
+  
+  .left-links a {
+    font-size: 16px; /* Optional: Increase font size for better readability */
+    text-align: center; /* Center align the links */
+  }
+  
+}

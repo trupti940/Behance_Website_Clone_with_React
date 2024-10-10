@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.sign-in-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  background-image: url(../assets/bridge.jpg);
+  background-size: cover;
+  margin-top: 80px;
+  flex-wrap: wrap;
+}
+
+.sign-in-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 450px;
+  height: 600px;
+  text-align: center;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.sign-in-box h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.signin-left {
+  height: 200px;
+  width: 200px;
+  margin-top: 60px;
+}
+
+.left-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+  font-weight: 800;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.continue-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.or-separator {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-btn {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.social-btn.google {
+  background-color: white;
+  border: 1px solid #4285f4;
+  color: #4285f4;
+}
+
+.social-btn.facebook {
+  background-color: #4267b2;
+  color: white;
+}
+
+.social-btn.apple {
+  background-color: black;
+  color: white;
+}
+
+.help-link {
+  margin-top: 20px;
+  display: block;
+  color: #007bff;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+  .sign-in-container {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+  }
+
+  .sign-in-box {
+      width: 90%;
+      height: auto;
+      margin: auto;
+  }
+
+  .signin-left {
+      height: 150px;
+      width: 150px;
+      margin-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .sign-in-container {
+      padding: 40px;
+  }
+
+  .sign-in-box {
+      width: 70%;
+      height: auto;
+  }
+
+  .signin-left {
+      height: 180px;
+      width: 180px;
+      margin-top: 40px;
+  }
+
+  .sign-in-box h2 {
+      font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .sign-in-box h2 {
+      font-size: 20px;
+  }
+
+  .input-field, .continue-btn, .social-btn {
+      font-size: 14px;
+  }
+
+  .or-separator {
+      font-size: 12px;
+  }
+
+  .help-link {
+      font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .signin-left {
+      height: 100px;
+      width: 100px;
+  }
+
+  .sign-in-box {
+      padding: 20px;
+  }
+}

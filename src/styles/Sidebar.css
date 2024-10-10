@@ -1,0 +1,185 @@
+.sidepanel {
+  width: 250px; /* Give the sidebar a fixed width or use percentage based on layout */
+  padding: 20px;
+  background-color: white;
+  border-right: 1px solid #eaeaea;
+  position: sticky;
+  top: 0; /* Stick to the top of the viewport */
+  height: 100vh; /* Ensure it fills the height of the viewport */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  flex-shrink: 0; /* Ensure it doesn't shrink when the container resizes */
+}
+
+
+ .categories {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+  
+.categories h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color:black;
+}
+
+.category_option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.category_option input {
+  margin-right: 10px;
+}
+
+.popular {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  color:black;
+}
+
+.view_all {
+  color: #0073e6;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 10px;
+  display: block;
+}
+
+.view_all:hover {
+  text-decoration: underline;
+}
+
+.location {
+  border-top: 1px solid #eaeaea;
+  padding-top: 15px;
+}
+
+.location_header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color:black;
+}
+
+.location_content {
+  margin-top: 10px;
+}
+
+.category_option label {
+  font-size: 14px;
+  color: #333; 
+  cursor: pointer;
+}
+
+.category_option input {
+  margin-right: 10px; 
+}
+
+
+.new_job_btn {
+  width: 100%; /* Full width for the button */
+  padding: 10px; /* Padding for button */
+  background-color: transparent; /* Button background color */
+  color: #001b9f; /* Button text color */
+  font-size: 25px;
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.new_job_btn-pro{
+  width: 100%; 
+  padding: 10px;
+  background-color: #6A82FB; 
+  color: #fff;
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer;
+  font-size: 16px; 
+  transition: background-color 0.3s; 
+}
+
+/* .new_job_btn:hover {
+  background-color: #FC5C7D; 
+} */
+
+.category_option {
+  display: flex; /* Flex display for alignment */
+  align-items: center; /* Center align items */
+  margin: 10px 0; /* Margin for spacing */
+}
+
+.category_option input {
+  margin-right: 10px; /* Space between input and label */
+}
+/* 
+.location {
+  margin-top: 20px; /* Space above location 
+} */
+
+.location_header {
+  display: flex; /* Flex display for header */
+  justify-content: space-between; /* Space between text and arrow */
+  align-items: center; /* Center align items */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-weight: bold; /* Bold text */
+}
+
+.arrow {
+  font-size: 1.2rem; /* Arrow size */
+  transition: transform 0.3s;
+  color:black; /* Smooth transition for arrow */
+}
+
+.arrow.open {
+  transform: rotate(90deg); /* Rotate arrow for open state */
+}
+
+.arrow.closed {
+  transform: rotate(0deg); /* No rotation for closed state */
+}
+
+.location_content {
+  margin-top: 10px; /* Space above content */
+  padding: 10px; /* Padding for the content area */
+  border: 1px solid #ccc; /* Border for the content area */
+  border-radius: 5px; /* Rounded corners for the content area */
+  
+  color:black; /* Background color for the content area */
+}
+
+.region_dropdown, .city_dropdown {
+  width: 100%; /* Full width for dropdowns */
+  padding: 10px; /* Padding for dropdowns */
+   /* Reduced space above dropdowns */
+  border: 1px solid #ccc; /* Border for dropdowns */
+  border-radius: 5px; /* Rounded corners for dropdowns */
+  background-color: white;
+  color:black;
+}
+
+.region_dropdown:focus, .city_dropdown:focus {
+  border-color: #6A82FB; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+/* Media Queries for Small Screens (phones, 480px and down) */
+@media (max-width: 480px) {
+  .sidepanel {
+    display: none; /* Hide the sidepanel on small screens */
+  }
+  .new_job_btn-pro{
+    padding: 15px 25px;
+    position: sticky;
+    top: 100px;
+    z-index: 10;
+  }
+  .new_job_btn-pro>span{
+    display: none;
+  }
+}

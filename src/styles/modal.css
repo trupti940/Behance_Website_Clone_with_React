@@ -1,0 +1,152 @@
+/* Modal Container */
+.modal {
+    display: none;
+    position: absolute;
+    top: 51px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(255, 253, 243);
+    border: 1px solid gray;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Increased padding for better spacing */
+    width: 400px; 
+    z-index: 1000;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.modal.visible {
+    display: block;
+}
+
+.modal-content {
+    text-align: center;
+}
+
+
+.modal-content #modal-heading {
+    font-size: 24px; /* Slightly larger heading */
+    margin-bottom: 3px; /* Increased margin for spacing */
+}
+
+.modal-content #modal-heading:hover {
+    text-decoration: underline;
+}
+
+.modal-content .modal-profile-image {
+    width: 80px; /* Slightly larger profile image */
+    height: 80px; /* Slightly larger profile image */
+    border-radius: 50%;
+    margin-bottom: 15px; /* Increased margin for better spacing */
+}
+
+/* Location Info in Modal */
+.modal-content .location {
+    margin: 4px 0; /* Increased margin */
+    font-size: 13px; /* Increased font size */
+    color: rgb(82, 82, 82);
+    cursor: pointer;
+}
+
+.modal-content .location:hover {
+    color: rgb(0, 0, 0);
+}
+
+/* Tags Section in Modal */
+.modal-content .tags {
+    margin: 15px 0; /* Increased margin for better spacing */
+    display: flex;
+    justify-content: center; /* Center tags */
+    flex-wrap: wrap; /* Allow tags to wrap in smaller screens */
+}
+
+/* Individual Tag Style */
+.modal-content .tag-1,
+.modal-content .tag-2 {
+    border: none;
+    background-color: transparent;
+    border-radius: 25px;
+    padding: 6px 12px; /* Increased padding */
+    cursor: pointer;
+    margin: 5px; /* Uniform margin */
+    font-weight: 600;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.modal-content .tag-1 {
+    color: rgb(213, 100, 247);
+    border: 1px solid rgb(229, 229, 229);
+}
+
+.modal-content .tag-2 {
+    color: #00256f;
+    border: 1px solid rgb(229, 229, 229);
+}
+
+/* Stats Section */
+.modal-content .stats {
+    margin: 15px 0; /* Increased margin */
+    display: flex; /* Use flexbox to align stats */
+    justify-content: space-around; /* Space items evenly */
+}
+
+.modal-content .stat-item {
+    text-align: center; /* Center-align stats */
+}
+
+.modal-content .stat-number {
+    display: block; /* Display number as block */
+    font-size: 1.5rem; /* Increase font size */
+    font-weight: bold; /* Bold number */
+}
+
+.modal-content .stat-label {
+    font-size: 0.9rem; /* Smaller font for labels */
+    color: #666; /* Optional: Gray color for labels */
+    margin-top: 4px; /* Add space between number and label */
+}
+
+.divider{
+    border-left: 1px solid rgb(201, 201, 201);
+    border-right: 1px solid rgb(201, 201, 201);
+    padding: 0 25px;
+}
+
+
+/* Buttons Section */
+.modal-buttons {
+    margin-top: 15px; /* Increased margin */
+}
+
+/* Follow Button */
+.modal-buttons .follow-btn {
+    width: 100%; 
+    border: none;
+    background-color: #0057ff;
+    color: white;
+    padding: 10px 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 4px 0; 
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hire Button */
+.modal-buttons .hire-btn {
+    width: 100%; 
+    background-color: transparent;
+    color: #0057ff;
+    padding: 10px 12px;
+    border-radius: 25px;
+    border: 2px solid rgb(229, 229, 229);
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Button Hover States */
+.modal-buttons .follow-btn:hover,
+.modal-buttons .hire-btn:hover {
+    background-color: #0042c6;
+    color: white;
+}

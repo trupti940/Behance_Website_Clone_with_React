@@ -1,0 +1,248 @@
+/* Background overlay for the modal */
+.jp-modal_background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it is above other elements */
+}
+
+/* Modal container styles */
+.jp-modal_container {
+    background-color: white; /* Modal background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    max-width: 1200px; /* Max width of modal */
+    height: auto;
+    width: 90%; /* Responsive width */
+    padding: 30px; /* Padding inside modal */
+    position: relative; /* For positioning the close button */
+}
+
+/* Close button styles */
+.jp-close_modal {
+    position: absolute; /* Position it in the top right corner */
+    top: 0;
+    right: 10px;
+    background: none; /* No background */
+    border: none; /* No border */
+    font-size: 24px; /* Larger font for visibility */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Modal content styles */
+.jp-modal_content {
+    display: flex; /* Use flexbox for card layout */
+    flex-direction: row; /* Arrange cards in a row */
+    justify-content: space-between; /* Space between the cards */
+    gap: 20px; /* Space between cards */
+}
+
+/* Individual card styles */
+.jp-modal_card {
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 50px; /* Padding inside each card */
+    background-color: #f9f9f9; /* Light background for cards */
+    flex: 1; /* Allow cards to grow equally */
+    min-width: 250px; /* Minimum width for cards */
+    height: auto;
+}
+
+/* Headings in cards */
+.jp-modal_card h6 {
+    font-size: 13px; /* Smaller size for subheading */
+    color: #0058f9; /* Grey color */
+}
+
+.jp-modal_card h1 {
+    font-size: 38px; /* Larger size for main heading */
+    padding-top: 11px;
+    padding-bottom: 6px;
+}
+
+.jp-modal_card p {
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.jp-points > li {
+    font-size: 15px;
+}
+
+.jp-points > li:nth-of-type(1) > i {
+    color: #0058f9;
+    margin-right: 10px;
+}
+
+.jp-points > li:nth-of-type(2) > i {
+    color: #0058f9;
+    margin-right: 14px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.jp-points > li:nth-of-type(3) > i {
+    color: #0058f9;
+    margin-right: 11px;
+}
+
+/* Styles for the list inside the cards */
+.jp-modal_card ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+    margin: 10px 0; /* Margin around the list */
+}
+
+/* Styles for the buttons in cards */
+.jp-modal_card button {
+    background-color: #0058f9; /* Bootstrap primary color */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 100px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for buttons */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 14px; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition */
+    line-height: 14px;
+    font-weight: 600;
+    margin-top: 28px;
+}
+
+.jp-modal_card button:hover {
+    background-color: #0043ca; /* Darker blue on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .jp-modal_container {
+        height: auto; /* Allow height to adjust based on content */
+        padding: 0; /* Adjust padding for smaller screens */
+    }
+
+    .jp-modal_content {
+        flex-direction: column; /* Stack cards vertically */
+    }
+
+    .jp-modal_card {
+        margin-bottom: 20px; /* Space between stacked cards */
+        padding: 20px; /* Adjust padding for smaller cards */
+    }
+}
+
+@media (max-width: 400px) {
+    .jp-modal_card {
+        min-width: 100%; /* Ensure cards take full width */
+        padding: 15px; /* Adjust padding further */
+    }
+
+    .jp-modal_card h1 {
+        font-size: 24px; /* Smaller font size for smaller screens */
+    }
+
+    .jp-modal_card p {
+        font-size: 16px; /* Smaller paragraph font size */
+    }
+
+    .jp-modal_card button {
+        font-size: 12px; /* Smaller button font size */
+        padding: 8px 12px; /* Adjust button padding */
+    }
+}
+
+@media (max-width: 200px) {
+    .jp-modal_container {
+        width: 95%; /* Slightly adjust width for very small screens */
+    }
+
+    .jp-modal_card h1 {
+        font-size: 20px; /* Further reduce heading size */
+    }
+
+    .jp-modal_card p {
+        font-size: 14px; /* Further reduce paragraph size */
+    }
+}
+
+
+/* Base styles for modals */
+.pm-modal_background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Ensure modal is on top */
+  }
+  
+  .pm-modal_container {
+    background: #fff; /* White background for the modal */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    padding: 20px;
+    width: 400px; /* Width of the modal */
+    max-width: 90%; /* Responsive width */
+    position: relative;
+  }
+  
+  .pm-close_modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: transparent;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333; /* Close button color */
+  }
+  
+  .pm-close_modal:hover {
+    color: #c1121f; /* Change color on hover */
+  }
+  
+  .pm-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pm-form label {
+    margin-bottom: 12px; /* Space between labels */
+  }
+  
+  .pm-form input,
+  .pm-form textarea {
+    padding: 8px; /* Inner padding */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    width: 100%; /* Full width */
+  }
+  
+  .pm-form textarea {
+    resize: none; /* Disable resizing */
+  }
+  
+  .pm-form button {
+    padding: 10px; /* Button padding */
+    background: #003049; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 16px; /* Font size */
+    margin-top: 10px; /* Space above button */
+  }
+  
+  .pm-form button:hover {
+    background: #c1121f; /* Change background color on hover */
+  }
+  

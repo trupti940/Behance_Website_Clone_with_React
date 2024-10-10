@@ -1,0 +1,130 @@
+.asts-asset-browser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.asts-banner {
+    width: 100%;
+    height: 300px;
+    background-image: url('https://cdn.pixabay.com/photo/2023/05/06/20/18/ai-generated-7975062_1280.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+.asts-banner-content {
+    text-align: center;
+    background: transparent;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.asts-main-content {
+    display: flex;
+    max-width: 1400px;
+    width: 100%;
+    margin: 20px;
+}
+
+.asts-sidebar {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-right: 1px solid #ddd;
+    width: 85px;
+    position: sticky;
+    top: 80px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.asts-sidebar > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+}
+
+.asts-filter {
+    margin-bottom: 20px;
+}
+
+.asts-filter-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #eaeaea;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.asts-filter-options {
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.asts-cards {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.asts-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.asts-card:hover {
+    transform: scale(1.02);
+}
+
+.asts-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.asts-card-content {
+    padding: 10px;
+}
+
+.asts-card-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .asts-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .asts-sidebar {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .asts-cards {
+        grid-template-columns: 1fr;
+    }
+}

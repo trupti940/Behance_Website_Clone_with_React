@@ -1,0 +1,122 @@
+/* General Styles */
+.job_listings {
+  padding: 20px;
+  flex-grow: 1;
+  background-color: white;
+  width: 80%;
+  overflow-y: auto; /* Enable vertical scrolling */
+  position: relative;
+  top: 0;
+}
+
+/* Job Listing Header */
+.job_listings_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 32px;
+  color: rgb(89, 86, 86);
+}
+
+.job_search input {
+  padding: 10px;
+  width: 100%; /* Full width on smaller screens */
+  max-width: 300px; /* Limit the width on larger screens */
+  border: 1px solid #eaeaea;
+  font-size: 16px;
+  background-color: #f6f0f0;
+  border-radius: 20px;
+}
+
+/* Job Cards Layout */
+.job_cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  color: rgb(15, 15, 15);
+  margin-left: 32px;
+}
+
+.job_card {
+  padding: 15px;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 340px; /* Max width for larger screens */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.job_card:hover {
+  background-color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+/* Company Logo */
+.job_company {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.jobcompany_logo {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+/* Location and Job Info */
+.job_location {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.job_title {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.job_description {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.job_days_ago {
+  color: #747070;
+  font-size: 12px;
+}
+
+/* Media Queries for Small Screens (phones, 480px and down) */
+@media (max-width: 480px) {
+  /* Hide "Full time jobs" heading */
+  .job_listings_header h2{
+    display: none; /* Assuming this is the class of the heading */
+  }
+
+  .job_listings {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .job_cards {
+    gap: 10px;
+    justify-content: center; /* Center cards on smaller screens */
+    margin-left: 0;
+  }
+
+  .job_card {
+    width: 100%; /* Full width for mobile */
+  }
+
+  .job_search input {
+    width: 100%;
+    max-width: none;
+    margin-left: 65px;
+     /* Full width on small screens */
+  }
+}
